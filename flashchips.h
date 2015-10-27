@@ -664,6 +664,7 @@
  * byte of device ID is related to log(bitsize) at least for some chips.
  */
 #define SST_ID			0xBF	/* SST */
+#define SST_ID_62		0x62	/* SST */
 #define SST_SST25LF020_REMS	0x43	/* REMS or RES opcode */
 #define SST_SST25WF512		0x2501
 #define SST_SST25WF010		0x2502
@@ -674,7 +675,7 @@
  * IDs and were not spotted in the wild yet. Their datasheets show a 4 byte long response w/o a vendor ID. */
 #define SST_SST25WF020A		/* 0x62 0x16 0x12 0x00 */
 #define SST_SST25WF040B		/* 0x62 0x16 0x13 0x00 */
-#define SST_SST25WF080B		/* 0x62 0x16 0x14 0x00 */
+#define SST_SST25WF080B		0x1614	/* 0x62 0x16 0x14 0x00 */
 #define SST_SST25VF512_REMS	0x48	/* REMS or RES opcode, same as SST25VF512A */
 #define SST_SST25VF010_REMS	0x49	/* REMS or RES opcode, same as SST25VF010A */
 #define SST_SST25VF020_REMS	0x43	/* REMS or RES opcode, same as SST25LF020A */
